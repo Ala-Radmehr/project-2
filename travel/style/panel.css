@@ -1,0 +1,248 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .logo span {
+      color: #fd8f00;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #120f0c;
+            color: #fff8ed;
+        }
+
+        /* side */
+
+        .side {
+            position: fixed;
+            width: 230px;
+            height: 100vh;
+
+            padding: 35px 20px;
+
+            border-right: 1px solid #332a20;
+            background: #120f0c;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+
+            margin-bottom: 70px;
+            padding-left: 15px;
+        }
+
+        .logo span {
+            color: #ff8a00;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu a {
+            color: #a99e90;
+            text-decoration: none;
+
+            padding: 14px 15px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+        }
+
+        .menu a:hover,
+        .menu a.active {
+            color: white;
+            background: #211a13;
+        }
+
+        /* main */
+
+        .main {
+            margin-left: 230px;
+
+            padding: 80px;
+        }
+
+        .top {
+            margin-bottom: 45px;
+        }
+
+        .top h1 {
+            font-family: Georgia, serif;
+
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .top p {
+            color: #a99e90;
+            font-size: 15px;
+        }
+
+        /* box */
+
+        .box {
+            max-width: 850px;
+
+            border: 1px solid #382e24;
+            background: #191510;
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            margin-bottom: 35px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .pic {
+            width: 70px;
+            height: 70px;
+
+            border-radius: 50%;
+
+            background: #2a2118;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 28px;
+        }
+
+        .user h2 {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .user p {
+            color: #a99e90;
+            font-size: 14px;
+        }
+
+        .btn {
+            margin-left: auto;
+
+            border: 1px solid #493a29;
+
+            background: transparent;
+            color: #fff8ed;
+
+            padding: 11px 22px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ff8a00;
+            color: #120f0c;
+            border-color: #ff8a00;
+        }
+
+        /* items */
+
+        .list {
+            max-width: 850px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+
+            border-bottom: 1px solid #332a20;
+
+            color: #fff8ed;
+
+            text-decoration: none;
+        }
+
+        .item:first-child {
+            border-top: 1px solid #332a20;
+        }
+
+        .icon {
+            width: 45px;
+
+            color: #ff8a00;
+
+            font-size: 19px;
+        }
+
+        .text {
+            flex: 1;
+
+            font-size: 15px;
+        }
+
+        .arrow {
+            color: #776d62;
+            font-size: 22px;
+        }
+
+        .item:hover .text {
+            color: #ff8a00;
+        }
+
+        /* mobile */
+
+        @media (max-width: 700px) {
+
+            .side {
+                position: static;
+
+                width: 100%;
+                height: auto;
+
+                border-right: none;
+                border-bottom: 1px solid #332a20;
+            }
+
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            .menu {
+                flex-direction: row;
+            }
+
+            .menu a {
+                padding: 10px;
+            }
+
+            .main {
+                margin-left: 0;
+                padding: 35px 20px;
+            }
+
+            .top h1 {
+                font-size: 30px;
+            }
+
+            .box {
+                padding: 20px;
+            }
+
+            .user {
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                margin-left: 0;
+            }
+        }
